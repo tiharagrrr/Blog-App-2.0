@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import {allBlogs} from '../../.contentlayer/generated/Blog/_index.mjs'
 
 export default function Home() {
   return (
