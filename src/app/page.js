@@ -1,5 +1,6 @@
 import {allBlogs} from 'contentlayer/generated'
 import HomeCoverSection from '../components/Home/HomeCoverSection'
+import Header from '../components/header'
 
 export default function Home() {
   console.log(allBlogs)
