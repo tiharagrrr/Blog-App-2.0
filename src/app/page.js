@@ -1,10 +1,12 @@
-import {allBlogs} from '../../.contentlayer/generated/Blog/_index.mjs'
+import {allBlogs} from 'contentlayer/generated'
+import HomeCoverSection from '../components/Home/HomeCoverSection'
 
 export default function Home() {
-  return (
+  console.log(allBlogs)
+    return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className='text-red-600'>
-        Hellow hammad
+        <HomeCoverSection blogs={allBlogs}/>
       </div>
      
 
