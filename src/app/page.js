@@ -2,6 +2,7 @@ import {allBlogs} from 'contentlayer/generated'
 import HomeCoverSection from '../components/Home/HomeCoverSection'
 import Header from '../components/header'
 import FeaturedPosts from '../components/Home/FeaturedPosts'
+import RecentPosts from '../components/Home/RecentPosts'
 
 export default function Home() {
     return (
@@ -10,6 +11,7 @@ export default function Home() {
       <div className=''>
         <HomeCoverSection blogs={allBlogs}/>
         <FeaturedPosts blogs={allBlogs} />
+        <RecentPosts blogs={allBlogs} />
       </div>
      
 
