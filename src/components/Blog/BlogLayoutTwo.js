@@ -17,10 +17,10 @@ const BlogLayoutTwo = ({blog}) => {
                   />
         </Link>
         <div className='col-span-8 w-full'>
-            <span className='uppercase text-teal-600 font-semibold text-sm'>{blog.tags[0]}</span>
+            <span className='uppercase text-accent font-semibold text-sm'>{blog.tags[0]}</span>
         <Link href={blog.url} className='inline-block my-1'>
         <h2 className='font-semibold capitalize text-lg'>
-          <span className='bg-gradient-to-r from-teal-600/40 to-teal-600/40 bg-[length:0px_6px] hover:bg-[length:100%_5px] bg-left-bottom bg-no-repeat transition-[background-size]
+          <span className='bg-gradient-to-r from-accent/40 to-accent/40 bg-[length:0px_5px] hover:bg-[length:100%_5px] bg-left-bottom bg-no-repeat transition-[background-size]
           duration-500'>
           {blog.title}
           </span>

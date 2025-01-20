@@ -8,15 +8,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        dark: "#1b1b1b",
-        light: "#fff",
-        accent: "#7B00D3",
-        accentDark: "#ffdb4d",
+        dark: "#030d10",
+        light: "#f8fcfe",
+        accent: "#7257de",
+        accentDark: "#878be7",
         gray: "#747474",
       },
       fontFamily: {
         inter: ["var(--font-in)"],
-        mr: ["var(--font-mr)"]
+        mr: ["var(--font-mr)"],
+        poppins: ["var(--font-pop)"]
       },
     },
   },
@@ -25,3 +26,4 @@ module.exports = {
 
 
 
+// 1.55.27

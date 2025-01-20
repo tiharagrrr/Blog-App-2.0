@@ -1,6 +1,7 @@
 import { sortBlogs } from '@/src/utils.js'
 import Link from 'next/link'
 import React from 'react'
+import BlogLayoutThree from '../Blog/BlogLayoutThree'
 
 const RecentPosts = ({blogs}) => {
     const sortedBlogs = sortBlogs(blogs)
@@ -10,10 +11,12 @@ const RecentPosts = ({blogs}) => {
             <h2 className='inline-block font-bold capitalize text-4xl'>Recent Posts</h2>
             <Link href="/categories/all" className='inline-block font-medium text-accent underline underline-offset-2 text-lg'>View Link</Link>
         </div>
-        <div className='grid grid-cols-3 gap-16 mt-16'>
+        <div className='grid grid-cols-3 grid-rows-3 gap-16 mt-16'>
             {
                 sortedBlogs.slice(5,11).map((blog,index) => {
-                    return <article className='col-span-1 row-span-1 relative'>blog layout 3</article>
+                    return <article className='col-span-1 row-span-1 relative'>
+                        <BlogLayoutThree blog={blog} />
+                    </article>
                 })
             }
         </div>
