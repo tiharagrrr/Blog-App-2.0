@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Manrope, Poppins } from "next/font/google";
 import { cx } from "../utils.js";
 import Header from "../components/header";
+import Footer from "../components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({ children }) {
       className={cx(inter.variable, manrope.variable, poppins.variable, "font-poppins bg-light")}>
         <Header />
         {children}
+        <Footer/>
       </body>
     </html>
   );
