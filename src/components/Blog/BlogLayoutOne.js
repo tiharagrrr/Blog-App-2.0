@@ -4,6 +4,7 @@ import Tag from '../Elements/Tag'
 import Link from 'next/link'
 
 const BlogLayoutOne = ({blog}) => {
+
   return (
     <div className='inline-block overflow-hidden rounded-xl'>
     
