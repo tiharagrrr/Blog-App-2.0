@@ -3,6 +3,7 @@ import Tag from "../../../components/Elements/Tag"
 import Image from "next/image"
 import React from "react"
 import BlogDetails from "@/src/components/Blog/BlogDetails"
+import RenderMdx from "@/src/components/Blog/RenderMdx"
 
 export default async function BlogPage({ params }) {
   const {slug} = await params
@@ -39,8 +40,9 @@ export default async function BlogPage({ params }) {
         </div>
       </div>
       <BlogDetails blog={blog} slug={slug} />
-      <div className="grid grid-cols-12 gap-16 bg-black mt-8 px-10">
-        
+      <div className="grid grid-cols-12 gap-16 mt-8 px-10">
+        <div className="col-span-4">toc</div>
+        <RenderMdx blog={blog}/>
       </div>
     </article>
   )
