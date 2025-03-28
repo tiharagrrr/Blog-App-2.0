@@ -42,7 +42,7 @@ export default async function BlogPage({ params }) {
       <BlogDetails blog={blog} slug={slug} />
       <div className="grid grid-cols-12 gap-16 mt-8 px-10">
         <div className="col-span-4">toc</div>
-        <RenderMdx blog={blog}/>
+        <RenderMdx blog={blog} className="" />
       </div>
     </article>
   )

@@ -11,7 +11,9 @@ const RenderMdx = ({blog}) => {
     const MDXContent = useMDXComponent(blog.body.code)
 
   return (
-    <div>
+    <div className='col-span-8 font-poppins prose prose-lg max-w-max prose-blockquote:bg-accentDark/40 prose-blockquote:p-2 prose-blockquote:px-6
+    prose-blockquote:border-accent prose-blockquote:rounded-r-lg 
+    '>
         <MDXContent components={mdxComponents} />
     </div>
   )
